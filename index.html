@@ -15,7 +15,6 @@
 		}
 		body {
 			background: #f5f5f5;
-			padding: 20px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -87,15 +86,15 @@
 			}
 		}
 	</style>
-	<link type="text/css" rel="stylesheet" href="puzzle.css"/>
-	<script type="text/javascript" src="puzzle.js"></script>
+	<link type="text/css" rel="stylesheet" href="puzzleimg.css"/>
+	<script type="text/javascript" src="puzzleimg.js"></script>
 	</head>
 <body>
-	<div class="center">
-		<div id="canvas"></div>
-	</div>
+	<div id="puzzle" class="puzelm">Here it is added the canvas with the puzzle.</div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js" integrity="sha512-FkM4ZGExuYz4rILLbNzw8f3HxTN9EKdXrQYcYfdluxJBjRLthYPxxZixV/787qjN3JLs2607yN5XknR/cQMU8w==" crossorigin="anonymous" referrerpolicy="no-referrer" await></script>
+<script>
+	var puz1 = new PuzzleImg('puzzle', './image.png', 5, 4);
+</script>
 <script>
 	function getTimeRemaining() {
 		const total = new Date("2022-03-28") - Date.parse(new Date());

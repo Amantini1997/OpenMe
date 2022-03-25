@@ -1,0 +1,43 @@
+/* Parent element that contains puzzle game */
+.puzelm {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+
+/* Canvas with puzzle */
+.puzcnv {
+  display: block;
+}
+
+/* Mini-image that shows original image */
+.puzimg {
+  position: absolute;
+  left: 15px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto 0 8%;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+.puzimg:hover {
+  width: 39%;
+  height: auto;
+  border: 2px solid blue;
+  background: #fff;
+  padding: 2px;
+}
+
+/* Button that auto-solves the puzzle */
+.puzsolve {
+  display: none;
+}
+
+canvas ~ * {
+	display: none;
+}
