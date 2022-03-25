@@ -87,16 +87,12 @@
 			}
 		}
 	</style>
-</head>
+	<link type="text/css" rel="stylesheet" href="puzzle.css"/>
+	<script type="text/javascript" src="puzzle.js"></script>
+	</head>
 <body>
-	<h2 class='center'>Touch the panel below 😜</h2>
-	<div class="panel center" onclick='this.classList.add("touched")'>
-		<div>
-			<h1 class='center'>🤔</h1>
-		</div>
-		<div>
-			<h1 class='center back'>Happy Birthday</h1>
-		</div>
+	<div class="center">
+		<div id="canvas"></div>
 	</div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/countdown/2.6.0/countdown.min.js" integrity="sha512-FkM4ZGExuYz4rILLbNzw8f3HxTN9EKdXrQYcYfdluxJBjRLthYPxxZixV/787qjN3JLs2607yN5XknR/cQMU8w==" crossorigin="anonymous" referrerpolicy="no-referrer" await></script>
@@ -135,7 +131,7 @@
 	}
 	(() => {
 		const [t] = getTimeRemaining();
-		if (t > 0) {
+		if (t > 0 && false) {
 			updateCountdown();
 			setInterval(updateCountdown, 1000);
 		}
